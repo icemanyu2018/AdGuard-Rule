@@ -1,5 +1,5 @@
 ! Title: AdGuard Rule - adgh.txt
-! Last modified: 2026-08-26 20:47:09
+! Last modified: 2026-08-26 21:37:39
 ! Expires: 12 hours
 ! Homepage: https://github.com/hululu1068/AdGuard-Rule
 
@@ -37874,6 +37874,7 @@
 ||ambolicrighto.com^
 ||ambonesswiss.cyou^
 ||ambosmosts.cfd^
+||ambotalaing.com^
 ||ambra.com^
 ||ambrosialsummit.com^
 ||ambroty.xyz^
@@ -45965,6 +45966,7 @@
 ||archivefrom502.com^
 ||archivehub.com.ng^
 ||archivescane.com^
+||archletsnobol.cyou^
 ||archlycadetclutch.com^
 ||archonswaff.qpon^
 ||archrug.com^
@@ -82809,6 +82811,7 @@
 ||cloakedjesses.cfd^
 ||clobberprocurertightwad.com^
 ||cloblmsvwkjvy.site^
+||clochanpimping.qpon^
 ||clochesdisbasegalling.cyou^
 ||cloci-nsdr-oa-2.net.daraz.com^
 ||clockangrilypotter.com^
@@ -111980,6 +111983,7 @@
 ||dfxwdc.com^
 ||dfyawvajhov.in^
 ||dfycwmrofqyeh.website^
+||dfyknirqkmity.space^
 ||dfyouolsdq.com^
 ||dfypinknckctz.website^
 ||dfyudpyceqoy.com^
@@ -205512,6 +205516,7 @@
 ||inextricableaugmentcompelling.com^
 ||inf.miui.com^
 ||inf.wqa.ru^
+||infacefusiblerandite.qpon^
 ||infacejimjam.help^
 ||infameeagled.com^
 ||infamous-atmosphere.pro^
@@ -222901,6 +222906,7 @@
 ||karyaranibox.net.daraz.com^
 ||karyologic.net.daraz.com^
 ||karyon.tt.omtrdc.net^
+||karyonneat.cyou^
 ||karyopharmheor.tt-qe5.omtrdc.net^
 ||kas-panteraa.tt.omtrdc.net^
 ||kas4.erfolg.tt.omtrdc.net^
@@ -223593,6 +223599,7 @@
 ||ken.kenxq.com^
 ||kenafriposts.qpon^
 ||kenafssubet.com^
+||kenaiuncamp.cfd^
 ||kendall.net.daraz.com^
 ||kendingfa.com^
 ||kendosbromal.top^
@@ -261749,6 +261756,7 @@
 ||melovehere.com^
 ||melpellcombats.help^
 ||melredirnxt.top^
+||melscyanite.shop^
 ||meltaigh.net^
 ||meltdsp.com^
 ||meltedacrid.com^
@@ -280155,6 +280163,7 @@
 ||npugpilraku.com^
 ||npugre8cto4wioum5re56o9h.cyou^
 ||npujhntk.com^
+||npunfxleurmlu.space^
 ||npunr.cn^
 ||npuuh.ecoenclose.com^
 ||npuwalz.com^
@@ -282493,6 +282502,7 @@
 ||nwcqt.bellabubear.com^
 ||nwdjlx.xyz^
 ||nwecd.xyz^
+||nweieuqrp.com^
 ||nwejs.alcryp.com^
 ||nwejs.myzcoffice.com^
 ||nwejuljibczi.com^
@@ -300150,6 +300160,7 @@
 ||poemswrestlingstrategy.com^
 ||poeqcj.stacyadams.com^
 ||poereawer.top^
+||poesiesdunker.shop^
 ||poetessdwarf.cfd^
 ||poetesseggingalypum.qpon^
 ||poethornconvicted.com^
@@ -403528,6 +403539,7 @@
 ||venomoussolidhow.com^
 ||venomousteenage.com^
 ||venomousvessel.com^
+||venomypawk.qpon^
 ||venonita.com^
 ||ventageslorp.com^
 ||ventanasyaluminios.com.mx^
@@ -434908,6 +434920,7 @@
 ||xvbtdwdelhhxe.com^
 ||xvbwjd.icu^
 ||xvcefcdyvbyyx.website^
+||xvcpswjhknnwy.site^
 ||xvcwbxjzdecpi.store^
 ||xvdcxksslnjgy.online^
 ||xvderylqps.xyz^
@@ -441785,6 +441798,7 @@
 ||zerostats.com^
 ||zerothtrophal.digital^
 ||zerowasteinitiative.com^
+||zersqueg.cfd^
 ||zeruwzwdzfpeo.site^
 ||zerzvqreoqqzq.top^
 ||zerzvqrzzqmre.top^
