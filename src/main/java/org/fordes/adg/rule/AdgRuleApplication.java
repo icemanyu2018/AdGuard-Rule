@@ -109,6 +109,7 @@ public class AdgRuleApplication implements ApplicationRunner {
         if (tasks.stream().anyMatch(task -> !task.isSuccessful())) {
             throw new IllegalStateException("至少一个规则源处理失败，阻止发布不完整结果");
         }
+        GeneratedRulesValidator.validate(fileDataMap);
         for (Map.Entry<File, Set<String>> entry : fileDataMap.entrySet()) {
             Util.writeAtomically(entry.getKey(), entry.getValue(),
                     fileFormatMap.get(entry.getKey()));

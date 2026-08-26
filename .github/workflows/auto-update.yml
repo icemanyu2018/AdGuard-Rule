@@ -14,6 +14,7 @@ env:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: update-filters-${{ github.workflow }}
@@ -40,132 +41,29 @@ jobs:
       - name: Run Jar
         run:  java -jar ./target/adg-rule-1.0.0.jar
 
-      - name: Validate generated rules
-        run: |
-          python3 - <<'PY'
-          import ipaddress
-          import re
-          from pathlib import Path
-
-          formats = {
-              "all.txt": "adguard",
-              "adgh.txt": "adguard-home",
-              "domain.txt": "adguard-home",
-              "hosts.txt": "hosts",
-              "modify.txt": "adguard",
-              "regex.txt": "adguard-home",
-          }
-          adblock_domain_pattern = re.compile(
-              r"^(?:@@)?\|\|(?=[^\s]*\.)[A-Za-z0-9*]"
-              r"(?:[A-Za-z0-9_*.-]*[A-Za-z0-9*])?\^(?:\$important)?$"
-          )
-          regex_pattern = re.compile(r"^(?:@@)?/.+/(?:\$important)?$")
-
-          def split_rules(name, output_format):
-              path = Path("rule", name)
-              lines = path.read_text(encoding="utf-8").splitlines()
-              if not lines:
-                  raise SystemExit(f"empty generated rule file: {path}")
-              if "[Adblock Plus 2.0]" in lines:
-                  raise SystemExit(f"obsolete Adblock Plus header found: {path}")
-              metadata = lines
-              marker = "#" if output_format == "hosts" else "!"
-              try:
-                  separator = metadata.index("")
-              except ValueError:
-                  raise SystemExit(f"missing header separator: {path}")
-              if any(not line.startswith(marker) for line in metadata[:separator]):
-                  raise SystemExit(f"invalid metadata comment: {path}")
-              body = metadata[separator + 1:]
-              if not body:
-                  raise SystemExit(f"empty generated rule file: {path}")
-              if any(not line for line in body):
-                  raise SystemExit(f"blank line found in generated rules: {path}")
-              if any(line.lower().startswith(("<!doctype html", "<html")) for line in body):
-                  raise SystemExit(f"HTML content found in generated rule file: {path}")
-              if any(re.match(r"^\|\|https?://", line) for line in body):
-                  raise SystemExit(f"malformed protocol-prefixed rule found: {path}")
-              if len(body) != len(set(body)):
-                  raise SystemExit(f"duplicate rules found in generated rule file: {path}")
-              return body
-
-          def valid_hosts_rule(rule):
-              fields = rule.split()
-              if len(fields) < 2:
-                  return False
-              try:
-                  ipaddress.ip_address(fields[0])
-              except ValueError:
-                  return False
-              hostnames = []
-              for field in fields[1:]:
-                  if field.startswith("#"):
-                      break
-                  hostnames.append(field)
-              return bool(hostnames) and all(
-                  re.fullmatch(r"[A-Za-z0-9](?:[A-Za-z0-9.-]*[A-Za-z0-9])?", field)
-                  for field in hostnames
-              )
-
-          bodies = {name: split_rules(name, output_format)
-                    for name, output_format in formats.items()}
-
-          if any(not adblock_domain_pattern.fullmatch(rule) for rule in bodies["domain.txt"]):
-              raise SystemExit("invalid domain rule found in rule/domain.txt")
-          if any(not valid_hosts_rule(rule) for rule in bodies["hosts.txt"]):
-              raise SystemExit("invalid hosts rule found in rule/hosts.txt")
-          if any(not regex_pattern.fullmatch(rule) for rule in bodies["regex.txt"]):
-              raise SystemExit("non-/REGEX/ rule found in rule/regex.txt")
-          if any(rule.startswith("###") for name in ("all.txt", "modify.txt")
-                 for rule in bodies[name]):
-              raise SystemExit("unsupported generic cosmetic rule found")
-
-          def sort_key(rule):
-              if rule.startswith("!"):
-                  return 0, rule
-              if (rule.startswith("#")
-                      and not rule.startswith(("##", "#@", "#$", "#%", "#?"))):
-                  return 1, rule
-              if rule.startswith("@@||") and adblock_domain_pattern.fullmatch(rule):
-                  return 2, rule
-              if rule.startswith("||") and adblock_domain_pattern.fullmatch(rule):
-                  return 3, rule
-              if regex_pattern.fullmatch(rule):
-                  return 4, rule
-              if valid_hosts_rule(rule):
-                  return 5, rule
-              return 6, rule
-
-          for name, body in bodies.items():
-              if body != sorted(body, key=sort_key):
-                  raise SystemExit(f"generated rule groups are not sorted: rule/{name}")
-
-          expected_all = set(bodies["domain.txt"]) | set(bodies["regex.txt"]) | set(bodies["modify.txt"])
-          if set(bodies["all.txt"]) != expected_all:
-              raise SystemExit("rule/all.txt is not the AdGuard content-rule union")
-          if set(bodies["all.txt"]) & set(bodies["hosts.txt"]):
-              raise SystemExit("raw hosts rule found in rule/all.txt")
-          expected_adgh = set(bodies["domain.txt"]) | set(bodies["regex.txt"]) | set(bodies["hosts.txt"])
-          if set(bodies["adgh.txt"]) != expected_adgh:
-              raise SystemExit("rule/adgh.txt is not the AdGuard Home rule union")
-          PY
-
-      - name: Commit Changes
+      - name: Commit rule updates
         id: commit
         run: |
-          if git diff --quiet --ignore-matching-lines='^[!#] Last modified:' -- rule; then
-              exit 0
-          else
-            echo "status=success" >> $GITHUB_OUTPUT
-            git add rule/all.txt rule/adgh.txt rule/domain.txt rule/hosts.txt rule/modify.txt rule/regex.txt
-            git config --local user.email "xjianglin@gmail.com"
-            git config --local user.name "hululu1068"
-            git commit --amend -m "Snapshot: $(date +'%Y-%m-%d %H:%M:%S')"
+          if [ -z "$(git status --porcelain -- rule)" ]; then
+            exit 0
           fi
+          echo "status=success" >> "$GITHUB_OUTPUT"
+          git add -- rule
+          git config --local user.email "xjianglin@gmail.com"
+          git config --local user.name "hululu1068"
+          git commit -m "Update rules: $(date +'%Y-%m-%d %H:%M:%S')" -- rule
 
       - name: GitHub Push
         if: steps.commit.outputs.status == 'success' && !cancelled()
-        run: git push --force-with-lease origin "HEAD:${GITHUB_REF_NAME}"
+        run: git push origin "HEAD:${GITHUB_REF_NAME}"
 
       - name: Mirror Refresh
         run: sleep 10 && curl 'https://purge.jsdelivr.net/gh/${{github.repository}}/rule'
+
+      - name: Delete Workflow Runs
+        uses: Mattraks/delete-workflow-runs@v2.1.0
+        with:
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          retain_days: 1
+          keep_minimum_runs: 1

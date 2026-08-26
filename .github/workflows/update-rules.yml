@@ -15,6 +15,7 @@ env:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: update-rules-${{ github.workflow }}
@@ -67,15 +68,30 @@ jobs:
       - name: Git push assets to Github
         id: commit
         run: |
-          if [ -z "$(git status --porcelain)" ]; then
+          assets=(
+            adblock.txt adblock_lite.txt adblock_plus.txt dns.txt
+            adrules_domainset.txt adrules-surge.conf
+            adrules-singbox.json adrules-singbox.srs adrules-mihomo.mrs
+            adrules.list adrules.list.json qx.conf smart-dns.conf
+            mosdns_adrules.txt rules
+          )
+          if [ -z "$(git status --porcelain -- "${assets[@]}")" ]; then
             exit 0
           fi
           echo "status=success" >> "$GITHUB_OUTPUT"
           git config --local user.name "actions"
           git config --local user.email "action@github.com"
-          git add -A
-          git commit --amend -m "Snapshot: $(TZ=UTC-8 date +"%Y-%m-%d %H:%M")"
+          git add -- "${assets[@]}"
+          git commit -m "Update rules: $(TZ=UTC-8 date +"%Y-%m-%d %H:%M")" -- "${assets[@]}"
 
-      - name: Push snapshot
+      - name: Push rule updates
         if: steps.commit.outputs.status == 'success' && !cancelled()
-        run: git push --force-with-lease origin HEAD:adrules
+        run: git push origin HEAD:adrules
+
+      - name: Delete Workflow Runs
+        uses: Mattraks/delete-workflow-runs@v2.1.0
+        with:
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          retain_days: 0
+          keep_minimum_runs: 2
