@@ -14,9 +14,9 @@ application:
     remote:
       - 'https://cdn.jsdelivr.net/gh/hoshsadiq/adblock-nocoin-list/hosts.txt'  #adblock-nocoin-list
       - 'https://cdn.jsdelivr.net/gh/durablenapkin/scamblocklist/adguard.txt' #Scam Blocklist
-      - 'https://someonewhocares.org/hosts/zero/hosts' #Dan Pollock's List
+      #- 'https://someonewhocares.org/hosts/zero/hosts' #Dan Pollock's List
       #- 'https://cdn.jsdelivr.net/gh/AdguardTeam/FiltersRegistry/filters/filter_15_DnsFilter/filter.txt' #AdGuard DNS filter
-      - 'https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext' #Peter Lowe's List
+      #- 'https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext' #Peter Lowe's List
       - 'https://abp.oisd.nl/basic/' #OISD Blocklist Basic
       #- 'https://adaway.org/hosts.txt' #AdAway Default Blocklist
       - 'https://cdn.jsdelivr.net/gh/crazy-max/WindowsSpyBlocker/data/hosts/spy.txt' #WindowsSpyBlocker
@@ -49,16 +49,9 @@ application:
       - 'https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/AdGuard/Advertising/Advertising.txt' #name: AdGuard_blackmatrix7合并
       - 'https://raw.githubusercontent.com/zsakvo/AdGuard-Custom-Rule/master/rule/zhihu.txt' #name: 知乎 普通版
       #- 'https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt' #name: 217heidai/adblockfilters去重合并(比较大)
-      - 'https://raw.githubusercontent.com/timlu85/AdGuard-Home_Youtube-Adfilter/master/Youtube-Adfilter-Web.txt' #name: Youtube-Adfilter-Web
-      - 'https://raw.githubusercontent.com/91ajames/ublock-filters-ulist-youtube/main/blocklist.txt' #name: ublock-filters-ulist-youtube
+      #- 'https://raw.githubusercontent.com/timlu85/AdGuard-Home_Youtube-Adfilter/master/Youtube-Adfilter-Web.txt' #name: Youtube-Adfilter-Web
+      #- 'https://raw.githubusercontent.com/91ajames/ublock-filters-ulist-youtube/main/blocklist.txt' #name: ublock-filters-ulist-youtube
       - 'https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt' #name: 秋风广告规则,针对Android广告
-      #KoolProxy规则
-      - 'https://github.com/ilxp/koolproxy/raw/main/rules/koolproxy.txt' #name:静态白名单规则
-      - 'https://github.com/ilxp/koolproxy/raw/main/rules/daily.txt' #name:每日规则
-      #- 'https://github.com/ilxp/koolproxy/blob/main/rules/adg.txt' #name:AdGuard规则
-      #- 'https://github.com/ilxp/koolproxy/blob/main/rules/adgk.txt' #name:Banben规则
-      #- 'https://github.com/ilxp/koolproxy/blob/main/rules/yhosts.txt' #name:Yhosts规则
-      #- 'https://github.com/ilxp/koolproxy/raw/main/rules/steven.txt' #格式错误：全部规则均为无效的 ||https://domain
       #uBlock内置规则
       - 'https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt' #name: uBlock filters
       - 'https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt' #name: uBlock filters – Badware risks
@@ -83,11 +76,11 @@ application:
       all.txt:    #输出文件名
         - DOMAIN  #规范 ||host^、@@||host^ 规则
         - REGEX   #/REGEX/ 格式的正则规则
+        - HOSTS   #Hosts规则
         - MODIFY  #AdGuard 内容过滤规则
       adgh.txt:
         - DOMAIN
         - REGEX
-        - HOSTS
       hosts.txt:
         - HOSTS
       regex.txt:

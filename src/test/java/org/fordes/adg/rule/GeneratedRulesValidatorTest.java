@@ -47,9 +47,9 @@ class GeneratedRulesValidatorTest {
     }
 
     @Test
-    void rejectsHostsRulesInAllOutput() {
+    void rejectsHostsRulesInAdghOutput() {
         Map<File, Set<String>> outputs = validOutputs();
-        outputs.get(file("all.txt")).add("0.0.0.0 ads.example.org");
+        outputs.get(file("adgh.txt")).add("0.0.0.0 ads.example.org");
 
         assertThrows(IllegalStateException.class,
                 () -> GeneratedRulesValidator.validate(outputs));
@@ -66,8 +66,8 @@ class GeneratedRulesValidatorTest {
         outputs.put(file("hosts.txt"), hosts);
         outputs.put(file("modify.txt"), modify);
         outputs.put(file("regex.txt"), regex);
-        outputs.put(file("all.txt"), union(domain, regex, modify));
-        outputs.put(file("adgh.txt"), union(domain, regex, hosts));
+        outputs.put(file("all.txt"), union(domain, regex, hosts, modify));
+        outputs.put(file("adgh.txt"), union(domain, regex));
         return outputs;
     }
 

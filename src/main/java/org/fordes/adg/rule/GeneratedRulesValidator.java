@@ -37,14 +37,14 @@ public final class GeneratedRulesValidator {
             throw new IllegalStateException("输出中包含不支持的通用 cosmetic 规则");
         }
 
-        if (!all.equals(union(domain, regex, modify))) {
-            throw new IllegalStateException("all.txt 与 DOMAIN、REGEX、MODIFY 合集不一致");
+        if (!all.equals(union(domain, regex, hosts, modify))) {
+            throw new IllegalStateException("all.txt 与 DOMAIN、REGEX、HOSTS、MODIFY 合集不一致");
         }
-        if (!adgh.equals(union(domain, regex, hosts))) {
-            throw new IllegalStateException("adgh.txt 与 DOMAIN、REGEX、HOSTS 合集不一致");
+        if (!adgh.equals(union(domain, regex))) {
+            throw new IllegalStateException("adgh.txt 与 DOMAIN、REGEX 合集不一致");
         }
-        if (!java.util.Collections.disjoint(all, hosts)) {
-            throw new IllegalStateException("all.txt 不应包含 HOSTS 规则");
+        if (!java.util.Collections.disjoint(adgh, hosts)) {
+            throw new IllegalStateException("adgh.txt 不应包含 HOSTS 规则");
         }
     }
 

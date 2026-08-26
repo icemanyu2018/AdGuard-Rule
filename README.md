@@ -49,10 +49,6 @@
     <li><a href="https://github.com/217heidai/adblockfilters">217heidai/adblockfilters去重合并(比较大)</a></li>
     <li><a href="https://raw.githubusercontent.com/timlu85/AdGuard-Home_Youtube-Adfilter/master/Youtube-Adfilter-Web.txt">Youtube-Adfilter-Web</a></li>
     <li><a href="https://raw.githubusercontent.com/91ajames/ublock-filters-ulist-youtube/main/blocklist.txt">ublock-filters-ulist-youtube</a></li>
-    # KoolProxy规则
-    <li><a href="https://raw.iqiq.io/ilxp/koolproxy/master/rules/koolproxy.txt">静态规则</a></li>
-    <li><a href="https://raw.iqiq.io/ilxp/koolproxy/master/rules/daily.txt">每日规则</a></li>
-    <li><s>StevenBlack规则（上游输出为无效的 <code>||https://domain</code>，已停用）</s></li>
     # uBlock内置规则
     <li><a href="https://cdn.jsdelivr.net/gh/uBlockOrigin/uAssetsCDN@main/filters/filters.txt">uBlock filters</a></li>
     <li><a href="https://ublockorigin.pages.dev/filters/badware.txt">uBlock filters – Badware risks</a></li>
@@ -67,19 +63,19 @@
 #### 本地规则
 
 - [mylist](#)
-> 主要是对上游规则的修正补充，根据日常使用体验，解除一些失误拦截
+> 对上游规则的修正补充，根据日常使用体验，自定义`添加/解除`一些误拦截
 
 <h2 id="b">🎯 订阅</h2>
 
-| 名称           | 说明                                                | Github Raw                                                                              | jsDelivr加速                                                                        |
-|--------------|---------------------------------------------------|---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| `all.txt`    | AdGuard 客户端内容过滤规则，不包含 `hosts`；按注释、例外域名、拦截域名、正则、其它排序                | [✈️点此查看](https://raw.githubusercontent.com/hululu1068/AdGuard-Rule/main/rule/all.txt)      | [🚀点此查看(延迟)](https://cdn.jsdelivr.net/gh/hululu1068/AdGuard-Rule@main/rule/all.txt)    |
-| `adgh.txt`   | AdGuard Home 规则，按注释、例外域名、拦截域名、正则、HOSTS 排序 | [✈️点此查看](https://raw.githubusercontent.com/hululu1068/AdGuard-Rule/main/rule/adgh.txt)   | [🚀点此查看(延迟)](https://cdn.jsdelivr.net/gh/hululu1068/AdGuard-Rule/main/rule/adgh.txt)   |
-| `domain.txt` | 规范的 `||host^`、`@@||host^` 规则                                       | [✈️点此查看](https://raw.githubusercontent.com/hululu1068/AdGuard-Rule/main/rule/domain.txt) | [🚀点此查看(延迟)](https://cdn.jsdelivr.net/gh/hululu1068/AdGuard-Rule@main/rule/domain.txt) |
-| `hosts.txt`  | AdGuard Home 支持的 `IP_address hostname` 规则                           | [✈️点此查看](https://raw.githubusercontent.com/hululu1068/AdGuard-Rule/main/rule/hosts.txt)  | [🚀点此查看(延迟)](https://cdn.jsdelivr.net/gh/hululu1068/AdGuard-Rule@main/rule/hosts.txt)  |
-| `modify.txt` | AdGuard 客户端内容过滤规则                                      | [✈️点此查看](https://raw.githubusercontent.com/hululu1068/AdGuard-Rule/main/rule/modify.txt) | [🚀点此查看(延迟)](https://cdn.jsdelivr.net/gh/hululu1068/AdGuard-Rule@main/rule/modify.txt) |
-| `regex.txt` | `/REGEX/` 格式的正则规则，AdGuard Home 支持                                       | [✈️点此查看](https://raw.githubusercontent.com/hululu1068/AdGuard-Rule/main/rule/regex.txt) | [🚀点此查看(延迟)](https://cdn.jsdelivr.net/gh/hululu1068/AdGuard-Rule@main/rule/regex.txt) |
-| `mylist.txt` | 自用补充规则，人工更新                                       | [✈️点此查看](https://raw.githubusercontent.com/hululu1068/AdGuard-Rule/main/rule/mylist.txt) | [🚀点此查看(延迟)](https://cdn.jsdelivr.net/gh/hululu1068/AdGuard-Rule@main/rule/mylist.txt) |
+| 名称           | 说明                                                | Github Raw                                                                              | jsDelivr CDN                                                                        |
+|---------------|-----------------------------------------------------|-----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| `all.txt`    | `DOMAIN + REGEX + HOSTS + MODIFY` 去重合集；按例外域名、拦截域名、正则、HOSTS、其它排序 | [✈️点击查看](https://raw.githubusercontent.com/hululu1068/AdGuard-Rule/main/rule/all.txt)      | [🚀点击查看](https://cdn.jsdelivr.net/gh/hululu1068/AdGuard-Rule@main/rule/all.txt)    |
+| `adgh.txt`   | AdGuard Home 规则，仅包含 `domain.txt + regex.txt`，不包含 HOSTS | [✈️点击查看](https://raw.githubusercontent.com/hululu1068/AdGuard-Rule/main/rule/adgh.txt)   | [🚀点击查看](https://cdn.jsdelivr.net/gh/hululu1068/AdGuard-Rule/main/rule/adgh.txt)   |
+| `domain.txt` | 规范的 `||host^`、`@@||host^` 域名规则                                       | [✈️点击查看](https://raw.githubusercontent.com/hululu1068/AdGuard-Rule/main/rule/domain.txt) | [🚀点击查看](https://cdn.jsdelivr.net/gh/hululu1068/AdGuard-Rule@main/rule/domain.txt) |
+| `hosts.txt`  | `IP_address hostname` 格式的 HOSTS 规则                           | [✈️点击查看](https://raw.githubusercontent.com/hululu1068/AdGuard-Rule/main/rule/hosts.txt)  | [🚀点击查看](https://cdn.jsdelivr.net/gh/hululu1068/AdGuard-Rule@main/rule/hosts.txt)  |
+| `modify.txt` | 修饰规则，`AdGuard`支持                                      | [✈️点击查看](https://raw.githubusercontent.com/hululu1068/AdGuard-Rule/main/rule/modify.txt) | [🚀点击查看](https://cdn.jsdelivr.net/gh/hululu1068/AdGuard-Rule@main/rule/modify.txt) |
+| `regex.txt` | 正则规则，`AdGuard`和`AdGuardHome`都支持                                       | [✈️点击查看](https://raw.githubusercontent.com/hululu1068/AdGuard-Rule/main/rule/regex.txt) | [🚀点击查看](https://cdn.jsdelivr.net/gh/hululu1068/AdGuard-Rule@main/rule/regex.txt) |
+| `mylist.txt` | 对上游规则的修正补充，根据日常使用体验，解除一些失误拦截(手动更新)                                       | [✈️点击查看](https://raw.githubusercontent.com/hululu1068/AdGuard-Rule/main/rule/mylist.txt) | [🚀点击查看](https://cdn.jsdelivr.net/gh/hululu1068/AdGuard-Rule@main/rule/mylist.txt) |
 
 <br/>
 <h2 id="c">🛠️ 配置</h2>
@@ -100,9 +96,10 @@ application:
     formats:
       all.txt: ADGUARD
     files:
-      all.txt:    #输出文件名
+      all.txt:  #输出文件名
         - DOMAIN  #规范 ||host^、@@||host^ 规则
         - REGEX   #/REGEX/ 格式的正则规则
+        - HOSTS   #Hosts规则
         - MODIFY  #AdGuard 内容过滤规则
 ```
 
@@ -110,9 +107,7 @@ application:
 
 - fork本项目
 - 参照示例配置，修改配置文件: `src/main/resources/application.yml`，注意本地规则文件应放入项目根目录 `rule` 文件夹
-- 编辑 `.github/workflows/auto-update.yml` 文件，将 `Commit Changes` 区块下邮箱与用户名修改为自己的（Github邮箱与用户名）
 - 提交所有修改并等待 `Github Action` 执行，执行完成后相应规则生成在配置中指定的目录下
-- 👉 特别感谢@fordes123
 
 <br/>
 <h2 id="c">🧭 支持</h2>

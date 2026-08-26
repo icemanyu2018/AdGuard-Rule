@@ -49,8 +49,8 @@ jobs:
           fi
           echo "status=success" >> "$GITHUB_OUTPUT"
           git add -- rule
-          git config --local user.email "xjianglin@gmail.com"
-          git config --local user.name "hululu1068"
+          git config --local user.name "actions"
+          git config --local user.email "action@github.com"
           git commit -m "Update rules: $(date +'%Y-%m-%d %H:%M:%S')" -- rule
 
       - name: GitHub Push
@@ -66,4 +66,4 @@ jobs:
           token: ${{ github.token }}
           repository: ${{ github.repository }}
           retain_days: 1
-          keep_minimum_runs: 1
+          keep_minimum_runs: 2
