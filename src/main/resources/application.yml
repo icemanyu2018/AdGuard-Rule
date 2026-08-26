@@ -53,13 +53,13 @@ application:
       #- 'https://raw.githubusercontent.com/91ajames/ublock-filters-ulist-youtube/main/blocklist.txt' #name: ublock-filters-ulist-youtube
       - 'https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt' #name: 秋风广告规则,针对Android广告
       #uBlock内置规则
-      - 'https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt' #name: uBlock filters
+      #- 'https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt' #name: uBlock filters
       - 'https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt' #name: uBlock filters – Badware risks
       - 'https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt' #name: uBlock filters – Privacy
       - 'https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/quick-fixes.txt' #name: uBlock filters – Quick fixes
       - 'https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt' #name: uBlock filters – Resource abuse
       - 'https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt' #name: uBlock filters – Unbreak
-      - 'https://filters.adtidy.org/extension/ublock/filters/11.txt' #name: AdGuard Mobile Ads移动设备
+      #- 'https://filters.adtidy.org/extension/ublock/filters/11.txt' #name: AdGuard Mobile Ads移动设备
     #本地规则
     local: #本地规则请将文件移动到项目路径rule目录中
       - 'mylist.txt'
