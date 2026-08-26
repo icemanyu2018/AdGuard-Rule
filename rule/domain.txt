@@ -1,5 +1,5 @@
 ! Title: AdGuard Rule - domain.txt
-! Last modified: 2026-08-26 16:16:09
+! Last modified: 2026-08-26 16:50:48
 ! Expires: 12 hours
 ! Homepage: https://github.com/hululu1068/AdGuard-Rule
 
@@ -194,7 +194,6 @@
 @@||pgpartner.com^
 @@||phs.tanx.com^
 @@||pics.porn300.com^
-@@||pics.porndroids.com^
 @@||pingjs.qq.com^$important
 @@||pixel.prime.amazon.dev^
 @@||profile*.se.360.cn^
@@ -16659,7 +16658,6 @@
 ||8820.pandasuite.io^
 ||88210212.com^
 ||882793fb7a.com^
-||883.engine.mobileapptracking.com^
 ||88362zubo95838.com^
 ||883cfbe09c.6d30803f5f.com^
 ||88461059da0a12ea.com^
@@ -24645,6 +24643,7 @@
 ||abrahamwiddie.cyou^
 ||abrakadabra.zensim.com.au^
 ||abram.xin^
+||abraserbrosseriper.cyou^
 ||abrashraf.rest^
 ||abrasivefirsthandsadly.com^
 ||abrasivematch.com^
@@ -27829,7 +27828,6 @@
 ||adcs.cabelas.com^
 ||adcs.mackspw.com^
 ||adcs.myappsget.com^
-||adcs.rqmob.com^
 ||adcsh.cfd^
 ||adcy.net^
 ||adcycle.com^
@@ -29751,7 +29749,6 @@
 ||adpinion.com^
 ||adpionier.de^
 ||adplans.info^
-||adplatform.vrtcal.com^
 ||adplay.it^
 ||adplay.ru^
 ||adplay.tudou.com^
@@ -32843,7 +32840,6 @@
 ||adx-static.ksosoft.com^
 ||adx-strategy-api-cn.statisticslinks.com^
 ||adx-t.com^
-||adx-tk.rayjump.com^
 ||adx.36kr.com^
 ||adx.aarki.net^
 ||adx.ads.heytapmobi.com^
@@ -37737,7 +37733,6 @@
 ||amalto.actonservice.com^
 ||amamaunuque.cyou^
 ||amamdaugeoqll.website^
-||amanad.adtdp.com^
 ||amanagement-application-springlication-spring.net.daraz.com^
 ||amanagementthenticate.net.daraz.com^
 ||amandegamilypopsy.qpon^
@@ -40264,6 +40259,7 @@
 ||anbalxkcpwa.com^
 ||anbiarfehxyz.com^
 ||anbinh-finance.club^
+||anblamsantapex.cyou^
 ||anbo.anyaonline.in^
 ||anbvofwznwbma.website^
 ||ancasgrhu.com^
@@ -73904,7 +73900,6 @@
 ||cdn-a.raptor.digital^
 ||cdn-ad.wtzw.com^
 ||cdn-adn-*.rayjump.com^
-||cdn-adn.rayjump.com^
 ||cdn-adphone.wenhua.com.cn^
 ||cdn-ads.oss-cn-shanghai.aliyuncs.com^
 ||cdn-ads.thesaigontimes.vn^
@@ -87954,7 +87949,6 @@
 ||config.sdk.scopely.io^
 ||config.tattilashes.com^
 ||config.toto.zipoapps.com^
-||config.tremorhub.com^
 ||config.uca.cloud.unity3d.com^
 ||config.unityads.unity3d.com^
 ||config.venuesearchlondon.com^
@@ -88015,7 +88009,6 @@
 ||configuratorservice.invescogroup.tt.omtrdc.net^
 ||configure-targets.tt.omtrdc.net^
 ||configure.adlermode.com^
-||configure.rayjump.com^
 ||configure8-app.adminintpoc.accountart-of-falco.tt-qe-ci1.omtrdc.net^
 ||configurelodashminimal.tt.omtrdc.net^
 ||configvelopment.ns.emailvision.net.daraz.com^
@@ -128366,6 +128359,7 @@
 ||duraflow.tt.omtrdc.net^
 ||duragyntvdcxs.space^
 ||duraline.buhlerag.tt.omtrdc.net^
+||duramenexla.cyou^
 ||duratex.humana.tt.omtrdc.net^
 ||durationmedia.net^
 ||durationzodiacdetermined.com^
@@ -165822,7 +165816,6 @@
 ||gameads.digyourowngrave.com^
 ||gameads.io^
 ||gameadult.tt.omtrdc.net^
-||gameanalysis.appcpi.net^
 ||gameanalytics.com^
 ||gameandwatch.desjardins.tt.omtrdc.net^
 ||gameapi-crmana-stagingle.office.tt.omtrdc.net^
@@ -189810,7 +189803,6 @@
 ||hb.headbidder.net^
 ||hb.metrics.tv2.dk^
 ||hb.openwebmp.com^
-||hb.rayjump.com^
 ||hb.vhsrv.com^
 ||hb.yahoo.net^
 ||hb3l6o.yughbny41r6qo4ylw6mrf4l.cyou^
@@ -198875,7 +198867,6 @@
 ||hyattstconfb1.tt.omtrdc.net^
 ||hyb.werkholm.pl^
 ||hybird.notifysrv.com^
-||hybird.rayjump.com^
 ||hybodusdouc.rest^
 ||hybrid-0qa.tt.omtrdc.net^
 ||hybrid-esxi03.adminhosting.accountart-of-falco.tt-qe-ci1.omtrdc.net^
@@ -202872,7 +202863,6 @@
 ||im.net.daraz.com^
 ||im.ns.emailvision.panel.net.daraz.com^
 ||im.of.pl^
-||im.ov.yahoo.co.jp^
 ||im.xo.pl^
 ||im0st6rwn.com^
 ||im1.56zzw.com^
@@ -265349,7 +265339,6 @@
 ||metrik.freitag.de^
 ||metrika-informer.com^
 ||metrika.kontur.ru^
-||metrika.lookmovie.io^$important
 ||metrika.lookmovie2.to^
 ||metrika.myseldon.com^
 ||metrika.traff.space^
@@ -276292,7 +276281,6 @@
 ||net.mydays.de^
 ||net.net.daraz.com^
 ||net.quisma.com^
-||net.rayjump.com^
 ||net.sexstories69.com^
 ||net.shop.com.mm^
 ||net.steiner-vision.de^
@@ -282641,6 +282629,7 @@
 ||nxkxmhqaywsqh.space^
 ||nxkycx.com^
 ||nxkyiwh.com^
+||nxlqljuasi.com^
 ||nxlreuwdto.com^
 ||nxmpmugazsghw.website^
 ||nxmsiuptjboqj.space^
@@ -289543,7 +289532,6 @@
 ||othdgemanow.xyz^
 ||othecknotinda.com^
 ||othellomajahowked.cyou^
-||other.appcpi.net^
 ||other.upqzfile.com^
 ||other.v.duowan.com^
 ||othere.info^
@@ -294521,6 +294509,7 @@
 ||pbmipgoqdlgnv.site^
 ||pbmixbfrgkarj.space^
 ||pbmjjozyvyegz.store^
+||pbmkglrlqcpgi.site^
 ||pbmlcgdxrjxcp.website^
 ||pbmmqjehjhyff.website^
 ||pbmp.ali213.net^
@@ -304235,7 +304224,6 @@
 ||psstentice.com^
 ||psstlexica.qpon^
 ||psstt.com^
-||pssvc.iqzone.com^
 ||pssy.xyz^
 ||pssyjxliwunax.website^
 ||psszqijvawlgk.online^
@@ -311636,6 +311624,7 @@
 ||re.trigs-sockets.com^
 ||re0rlupcz.com^
 ||re0y7d.cyou^
+||re3r.com^
 ||re41qiitb1.com^
 ||reabitheconti.com^
 ||reach-id.orbit.tm-awx.com^
@@ -330261,7 +330250,6 @@
 ||settbayeta.qpon^
 ||settdenar.qpon^
 ||setting.adzcore.com^
-||setting.rayjump.com^
 ||setting.snswin.qq.com^
 ||settings-analytics.hotstar.com^
 ||settings-sandbox.data.microsoft.com^
@@ -373425,6 +373413,7 @@
 ||thewise.com^
 ||thewowfeed.com^
 ||thewrazeingparrots.cyou^
+||thewreshook.cfd^
 ||thewscozier.uno^
 ||thewsere.top^
 ||theyenglory.guru^
@@ -396078,6 +396067,7 @@
 ||uplhistory-berndpulchmedotcomdlib-ht-1.net.daraz.com^
 ||uplication-spring.net.daraz.com^
 ||uplift-platform.com^
+||upliftengine.io^
 ||upliftrenewables.cc^
 ||upliftsearch.com^
 ||uplinecliency.com^
@@ -438817,6 +438807,7 @@
 ||yoxiiflnc.com^
 ||yoxkenhj.adminhosting.accountart-of-falco.tt-qe-ci1.omtrdc.net^
 ||yoxrhwtvyqt.com^
+||yoxrwlhjmmnsl.site^
 ||yoxus.cn^
 ||yoyadsdom.com^
 ||yoyausones.com^
@@ -441176,6 +441167,7 @@
 ||zcpplcvjzmlqj.site^
 ||zcpsc.top^
 ||zcpxl.hobbs.com^
+||zcqmdkicka.com^
 ||zcrddj.icu^
 ||zcrfefgrg.com^
 ||zcrtd.com^
