@@ -1,5 +1,5 @@
 ! Title: AdGuard Rule - modify.txt
-! Last modified: 2026-08-26 09:10:35
+! Last modified: 2026-08-26 11:19:05
 ! Expires: 12 hours
 ! Homepage: https://github.com/hululu1068/AdGuard-Rule
 
@@ -11612,6 +11612,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 -970x90-
 -980x60-
 -988x60.
+-Verify-Cloudflare-$doc
 -ad-manager/$~stylesheet
 -ad-sidebar.$image
 -ad.jpg.pagespeed.$image
@@ -98810,6 +98811,7 @@ zzztube.com,videoporn.tube##.b-random-column
 ||bonertube.com/*frntldr.js
 ||bongacams.com/promo.php
 ||bongacams.com^$popup,third-party
+||bongacams.com^$subdocument,third-party
 ||bongacams10.com^$popup
 ||bongacams11.com^$popup
 ||bongacams8.com/track?$popup

@@ -1,5 +1,5 @@
 ! Title: AdGuard Rule - domain.txt
-! Last modified: 2026-08-26 09:10:36
+! Last modified: 2026-08-26 11:19:05
 ! Expires: 12 hours
 ! Homepage: https://github.com/hululu1068/AdGuard-Rule
 
@@ -18756,6 +18756,7 @@
 ||a037infohpartner.net.daraz.com^
 ||a04296f070c0146f314d-0dcad72565cb350972beb3666a86f246.r50.cf5.rackcdn.com^
 ||a043ns11s.cs-utils-rtr.net.daraz.com^
+||a04fd7399b.com^
 ||a05fda840b.cd6b9b5aa4.com^
 ||a065b8f217.com^
 ||a0675c1160de6c6.com^
@@ -47371,6 +47372,7 @@
 ||assignlabor.com^
 ||assignmentcursor.com^
 ||assignmentlonesome.com^
+||assilashkar.qpon^
 ||assimilatecigarettes.com^
 ||assinatura.marketingbmg.bancobmg.com.br^
 ||assist.jdlighting.com.au^
@@ -57655,6 +57657,7 @@
 ||bienvivre.chartwell.com^
 ||bieplmwcawogmep.xyz^
 ||bieqpf.cn^
+||biersnabbukbragger.cfd^
 ||bierspurist.shop^
 ||biesn.crossrope.com^
 ||biettainhimua2.wixsite.com^
@@ -58879,6 +58882,7 @@
 ||bkovnfkkfo.com^
 ||bkox.cn^
 ||bkozfegqtjmzb.space^
+||bkpjfenmzaqjl.site^
 ||bkpmmpsqgluwj.online^
 ||bkpoef.jules.com^
 ||bkprmw.ironyporno.com^
@@ -64765,6 +64769,7 @@
 ||buskerreshoes.website^
 ||busketmating.qpon^
 ||busksspiled.cfd^
+||busmenfiver.cyou^
 ||buspar.1.p2l.info^
 ||buspirone.1.p2l.info^
 ||busrol.st-eustachenissan.com^
@@ -77938,6 +77943,7 @@
 ||charnudorask.shop^
 ||charnupock.cfd^
 ||charonunroomy.help^
+||charpitlurking.shop^
 ||charrewuzzer.com^
 ||charsubsistfilth.com^
 ||chart.dk^
@@ -79860,6 +79866,7 @@
 ||chyjobopse.pro^
 ||chykohija.pro^
 ||chylerothe.com^
+||chylesmispens.cyou^
 ||chylespastoseobclude.cfd^
 ||chylesunfact.cyou^
 ||chylifygubbin.qpon^
@@ -122504,6 +122511,7 @@
 ||doh.ptqy.gitv.tv^
 ||doh.zjurl.cn^
 ||dohaunting.com^
+||dohersbtpponf.site^
 ||dohetsonou.net^
 ||dohihf.com^
 ||dohillright.com^
@@ -133526,6 +133534,7 @@
 ||ec2f2aaf-8628-ae0c-b9b1-fee4721583e1-us-east-1.rtcp.on.tt.omtrdc.net^
 ||ec2f7b1e-1642-a6ff-87fe-05510154ed45-us-west-1.rtcp.on.tt.omtrdc.net^
 ||ec3.ma.tt.omtrdc.net^
+||ec375309c1.com^
 ||ec3zlf7xk1c2ki.ppxiur4byic1lcnmy.cfd^
 ||ec3zuiki72.abnamro.tt.omtrdc.net^
 ||ec3zuiki72.infinitiheliosameric.tt.omtrdc.net^
@@ -166566,6 +166575,7 @@
 ||garotedpileus.qpon^
 ||garotemuruxi.com^
 ||garouspostern.com^
+||garousshorl.cfd^
 ||garowrite.com^
 ||garppjpuuhbby.site^
 ||garrafaspotted.com^
@@ -166624,6 +166634,7 @@
 ||gaspra.tt.omtrdc.net^
 ||gaspsoap.com^
 ||gassales.eversource.com^
+||gassedcruset.shop^
 ||gassets.peekundcloppenburg.tt.omtrdc.net^
 ||gassetsyancancookcpi-r-oa-2.net.daraz.com^
 ||gassetsyancancooktewassetsyancancooky-lib-ht-2.net.daraz.com^
@@ -192354,6 +192365,7 @@
 ||hgsly.buzz^
 ||hgt.tt.omtrdc.net^
 ||hgtasizbgvjdn.website^
+||hgtcevvuzvdvd.site^
 ||hgtczdcptoidc.site^
 ||hgtdroan.com^
 ||hgtnv.bvnk.com^
@@ -194411,6 +194423,7 @@
 ||hnsgpw.com^
 ||hnshangzhongxia.com^
 ||hnskorea.co.kr^
+||hnsrvcjnrmzd.com^
 ||hnsziqysnqozo.website^
 ||hntezhi.com^
 ||hntiprpnvgsfh.site^
@@ -198778,6 +198791,7 @@
 ||husdv.sokolovelaw.com^
 ||huseby.actonservice.com^
 ||huselomboy.website^
+||husetraces.qpon^
 ||husezo.uno^
 ||husfly.com^
 ||hushclosing.com^
@@ -235475,6 +235489,7 @@
 ||llksja.com^
 ||lllencim.com^
 ||lllgavbgnmcbf.com^
+||llljluuarqxai.site^
 ||lllkotiocpjfb.com^
 ||llllhshgscfda.site^
 ||lllsg.whateverworks.com^
@@ -255167,6 +255182,7 @@
 ||mah7njdwcihtt5sl.net.net.daraz.com^
 ||mahaidroagra.com^
 ||mahajanenfelon.qpon^
+||mahaldenaryfrit.qpon^
 ||mahalhep.qpon^
 ||mahalowood.com^
 ||mahao1.cn^
@@ -259861,6 +259877,7 @@
 ||maximherein.com^
 ||maximiser.net^
 ||maximpetus.com^
+||maximryder.cyou^
 ||maximsclown.life^
 ||maximtoaster.com^
 ||maximumcash.com^
@@ -280729,6 +280746,7 @@
 ||nqtufgmgmjnwlj.com^
 ||nqtxg.xyz^
 ||nqubqpqmnecey.online^
+||nquhigsonstyb.site^
 ||nqujxpsgreztv.online^
 ||nqumc.webinopoly.com^
 ||nquwtotbedsbw.website^
@@ -298382,6 +298400,7 @@
 ||pinvf.australianopaldirect.com^
 ||pinwalerompers.com^
 ||pinwormpastierfubbery.qpon^
+||pinxcrusets.shop^
 ||pinyonexdie.help^
 ||pinzhitmall.com^
 ||pionaocmsbrfx.site^
@@ -300778,6 +300797,7 @@
 ||pokitom.com^
 ||pokkt.com^
 ||pokkt.fuse-ad.com^
+||pokmdwxjpepxg.online^
 ||pokomoofimbles.cyou^
 ||pokoran.com^
 ||pokrc.hotelcollection.ca^
@@ -311294,6 +311314,7 @@
 ||ran2.top^
 ||ranarooters.qpon^
 ||ranchmohawks.qpon^
+||ranchosknoxian.shop^
 ||ranchsatin.com^
 ||rancidframingyet.com^
 ||rancidmorsel.com^
@@ -322020,6 +322041,7 @@
 ||safalindustries.com^
 ||safaricom.tt.omtrdc.net^
 ||safarlysins.com^
+||safartelega.cyou^
 ||safbifdgjlptd.website^
 ||safdjknc2.adblock-for-y.com^
 ||safe-click.net^
@@ -343502,6 +343524,7 @@
 ||snowiershiko.shop^
 ||snowiersociete.uno^
 ||snowiethaught.shop^
+||snowkhaab.shop^
 ||snowldupes.digital^
 ||snowman.odencat.com^
 ||snowman77.com^
@@ -343983,6 +344006,7 @@
 ||solacedsell.qpon^
 ||solacedwergild.digital^
 ||solacerebonist.uno^
+||soladelapse.qpon^
 ||solads.media^
 ||solamor.com^
 ||solandsnatchshake.cfd^
@@ -419144,6 +419168,7 @@
 ||worry-free-savings.com^
 ||worrycuriositymafia.com^
 ||worryinginadmissible.com^
+||worsenscooled.shop^
 ||worseobscureplastic.com^
 ||worserharrid.cfd^
 ||worsesteal.pro^
@@ -436087,6 +436112,7 @@
 ||xykvvtxgpyqmy.online^
 ||xylanfdname.com^
 ||xylaoppress.com^
+||xylemtushie.cyou^
 ||xylenylyetapa.uno^
 ||xylinaseemed.help^
 ||xylinidantres.qpon^
@@ -438005,6 +438031,7 @@
 ||yfhtbdn.com^
 ||yfi8.com^
 ||yfibjzosrqrtmv.com^
+||yfihdesofzmms.website^
 ||yfiucflgsgbry.site^
 ||yfjfmx.scahealth.com^
 ||yfjkqpdwlimuh.space^
@@ -439039,6 +439066,7 @@
 ||ynelypolkq.com^
 ||ynemmp.goertz.de^
 ||ynemqgebtqzkc.site^
+||yneoyeveb.com^
 ||ynet.da.mgtv.com^
 ||ynewmx-s-eshssapi.account.hb-api.tt.omtrdc.net^
 ||ynewmx-s-eshssapi.admin.hb-api.tt.omtrdc.net^
