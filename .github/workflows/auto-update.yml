@@ -50,7 +50,7 @@ jobs:
           echo "status=success" >> "$GITHUB_OUTPUT"
           git add -- rule
           git config --local user.name "icemanyu2018"
-          git config --local user.email byronyu2004@126.com"
+          git config --local user.email "byronyu2004@126.com"
           git commit -m "Update rules: $(date +'%Y-%m-%d %H:%M:%S')" -- rule
 
       - name: GitHub Push
