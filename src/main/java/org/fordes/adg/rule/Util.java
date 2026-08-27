@@ -80,11 +80,11 @@ public class Util {
                 bangComments.add(rule);
             } else if (isHashComment(rule)) {
                 hashComments.add(rule);
-            } else if (rule.startsWith("@@||") && validRule(rule, RuleType.DOMAIN)) {
+            } else if (rule.startsWith("@@||")) {
                 exceptions.add(rule);
-            } else if (rule.startsWith("||") && validRule(rule, RuleType.DOMAIN)) {
+            } else if (rule.startsWith("||")) {
                 blocks.add(rule);
-            } else if (validRule(rule, RuleType.REGEX)) {
+            } else if (isContentRegexRule(rule)) {
                 regex.add(rule);
             } else if (validRule(rule, RuleType.HOSTS)) {
                 hosts.add(rule);
@@ -106,6 +106,10 @@ public class Util {
         bangComments.addAll(hosts);
         bangComments.addAll(other);
         return bangComments;
+    }
+
+    private static boolean isContentRegexRule(String rule) {
+        return ReUtil.isMatch("^(?:@@)?/.+/(?:\\$.*)?$", rule);
     }
 
     private static boolean isHashComment(String rule) {

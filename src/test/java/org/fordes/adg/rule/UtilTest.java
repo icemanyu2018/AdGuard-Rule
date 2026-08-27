@@ -68,18 +68,26 @@ class UtilTest {
         assertEquals(List.of(
                         "! comment",
                         "# comment",
+                        "@@||allowed.example.org/path.js$script",
                         "@@||allowed.example.org^",
+                        "||example.org/ads.js$script,third-party",
                         "||example.org^",
                         "/^example\\.org$/",
+                        "/ads\\d+/$script,domain=example.org",
                         "0.0.0.0 example.org",
-                        "##.advertisement"
+                        "##.advertisement",
+                        "/*/ad.js$script"
                 ),
                 Util.sortRules(List.of(
+                        "/*/ad.js$script",
                         "##.advertisement",
                         "0.0.0.0 example.org",
                         "/^example\\.org$/",
+                        "/ads\\d+/$script,domain=example.org",
                         "||example.org^",
+                        "||example.org/ads.js$script,third-party",
                         "@@||allowed.example.org^",
+                        "@@||allowed.example.org/path.js$script",
                         "# comment",
                         "! comment"
                 )));
