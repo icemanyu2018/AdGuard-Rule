@@ -1,5 +1,5 @@
 ! Title: AdGuard Rule - all.txt
-! Last modified: 2026-08-27 15:21:34
+! Last modified: 2026-08-27 18:05:38
 ! Expires: 12 hours
 ! Homepage: https://github.com/hululu1068/AdGuard-Rule
 
@@ -158089,6 +158089,7 @@
 ||emuobhye.luksusbaby.se^
 ||emv3qtl986wv6q.cfd^
 ||emvcujgimb.xyz^
+||emvpjughahjns.online^
 ||emway.ir^
 ||emwksqauungjg.website^
 ||emwkzebpuo.com^
@@ -183191,6 +183192,7 @@
 ||fydyjx.com^
 ||fyebmf.lifenet-seimei.co.jp^
 ||fyehare.com^
+||fyewmxobwpmfz.space^
 ||fyewrocgieeog.site^
 ||fyexyd.icu^
 ||fyfu.ttbu59z6hmxyfl.cfd^
@@ -190463,6 +190465,7 @@
 ||gir1p8pqbbt12xkx25xk8ib5.cfd^
 ||giraff.io^
 ||giraffe.viatorci.com^
+||giraffeconfrontationreseptivereseptive.com^
 ||giraffedestitutegigantic.com^
 ||giraffemaintained.com^
 ||giraffepiano.com^
@@ -344355,6 +344358,7 @@
 ||rr.groc.press^
 ||rr.knet.cn^
 ||rr7576.com^
+||rralmfxahsesz.online^
 ||rranyl.muchachomalo.com^
 ||rrbaib.tsutsumishop.jp^
 ||rrbqvmoordsye.space^
@@ -346467,6 +346471,7 @@
 ||rwmttawspapqcy.com^
 ||rwnlfmazqkzdz.space^
 ||rwnmcum.cn^
+||rwnrmyvtoba.com^
 ||rwofesciqvzgr.site^
 ||rwohdj.motocard.com^
 ||rwohwaeyupzjp.website^
@@ -400243,6 +400248,7 @@
 ||tck.photobox.com^
 ||tck.wonderbox.fr^
 ||tckfq4qoqbmfx4.cfd^
+||tckgiyfigpype.space^
 ||tckjttdn.top^
 ||tckmj.shareably.net^
 ||tckn-code.com^
@@ -427208,6 +427214,7 @@
 ||uqbqarpuytxzd.site^
 ||uqbxjdeeq.com^
 ||uqbxznftv.com^
+||uqcglorcbtpyg.space^
 ||uqckxr.chilli.se^
 ||uqczr.smoothly.com^
 ||uqd.io^
@@ -429711,6 +429718,7 @@
 ||uvvhimqchjcvq.site^
 ||uvwazabyjyxok.site^
 ||uvwelvnydoy.com^
+||uvwtadbhfqttc.online^
 ||uvwtmppnbqgzha.com^
 ||uvwvjd.cablematic.com^
 ||uvxclrl.com^
@@ -438343,6 +438351,7 @@
 ||vnkpcielaguki.online^
 ||vnkzpvmaximaz.website^
 ||vnl1.voyage-prive.nl^
+||vnlieaosjqtxa.site^
 ||vnlozunyvl.com^
 ||vnlqgiuul.com^
 ||vnlvxi.vivastreet.co.uk^
@@ -472128,6 +472137,7 @@
 ||yvdxhbuupndqo.love^
 ||yvdxij.applevacations.com^
 ||yvdzdkiov.com^
+||yvehygnvznbnd.online^
 ||yvercbjclvafn.site^
 ||yves-rocker.fr^
 ||yveysufrzogll.online^
@@ -480129,7 +480139,7 @@
 /^https?:\/\/instagram-[a-z][a-z][a-z][a-z][a-z]+\.[a-z]+\//$doc,to=cc|top|help
 /^https?:\/\/instagram-[a-z]{5,}\.[a-z]{2,4}\//$doc,to=cc|top|help
 /^https?:\/\/picturelol\.com\/[a-z\d]+\.(js)$/$domain=picturelol.com
-/^https?:\/\/pikabu\.ru\/ajax\/+[A-Za-z0-9_-]+(\.[A-Za-z0-9]{1,2})?\?[A-Za-z0-9]+=[0-9a-z_-]+/$xmlhttprequest,domain=pikabu.ru
+/^https?:\/\/pikabu\.ru\/ajax\/{1,2}[A-Za-z0-9_-]{8,}(?:\.[A-Za-z0-9_-]{1,2})?\?[A-Za-z0-9]+=[0-9a-z_-]+/$xmlhttprequest,domain=pikabu.ru
 /^https?:\/\/qqh[0-9]\.mom\//$doc,to=mom
 /^https?:\/\/reddit-\d{1,2}\.[a-z]{4}\.(?:net|org|pw)\//$doc,to=net|org|pw|~reddit.com
 /^https?:\/\/s3\.*\.amazonaws\.com\/[a-f0-9]{45,}\/[a-f,0-9]{8,10}$/$script,third-party,xmlhttprequest,domain=~amazon.com

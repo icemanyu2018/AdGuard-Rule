@@ -1,5 +1,5 @@
 ! Title: AdGuard Rule - adgh.txt
-! Last modified: 2026-08-27 15:21:32
+! Last modified: 2026-08-27 18:05:37
 ! Expires: 12 hours
 ! Homepage: https://github.com/hululu1068/AdGuard-Rule
 
@@ -140448,6 +140448,7 @@
 ||emuobhye.luksusbaby.se^
 ||emv3qtl986wv6q.cfd^
 ||emvcujgimb.xyz^
+||emvpjughahjns.online^
 ||emway.ir^
 ||emwksqauungjg.website^
 ||emwkzebpuo.com^
@@ -164530,6 +164531,7 @@
 ||fydyjx.com^
 ||fyebmf.lifenet-seimei.co.jp^
 ||fyehare.com^
+||fyewmxobwpmfz.space^
 ||fyewrocgieeog.site^
 ||fyexyd.icu^
 ||fyfu.ttbu59z6hmxyfl.cfd^
@@ -171460,6 +171462,7 @@
 ||gir1p8pqbbt12xkx25xk8ib5.cfd^
 ||giraff.io^
 ||giraffe.viatorci.com^
+||giraffeconfrontationreseptivereseptive.com^
 ||giraffedestitutegigantic.com^
 ||giraffemaintained.com^
 ||giraffepiano.com^
@@ -317451,6 +317454,7 @@
 ||rr.groc.press^
 ||rr.knet.cn^
 ||rr7576.com^
+||rralmfxahsesz.online^
 ||rranyl.muchachomalo.com^
 ||rrbaib.tsutsumishop.jp^
 ||rrbqvmoordsye.space^
@@ -319490,6 +319494,7 @@
 ||rwmttawspapqcy.com^
 ||rwnlfmazqkzdz.space^
 ||rwnmcum.cn^
+||rwnrmyvtoba.com^
 ||rwofesciqvzgr.site^
 ||rwohdj.motocard.com^
 ||rwohwaeyupzjp.website^
@@ -371172,6 +371177,7 @@
 ||tck.photobox.com^
 ||tck.wonderbox.fr^
 ||tckfq4qoqbmfx4.cfd^
+||tckgiyfigpype.space^
 ||tckjttdn.top^
 ||tckmj.shareably.net^
 ||tckn-code.com^
@@ -396927,6 +396933,7 @@
 ||uqbqarpuytxzd.site^
 ||uqbxjdeeq.com^
 ||uqbxznftv.com^
+||uqcglorcbtpyg.space^
 ||uqckxr.chilli.se^
 ||uqczr.smoothly.com^
 ||uqd.io^
@@ -399356,6 +399363,7 @@
 ||uvvhimqchjcvq.site^
 ||uvwazabyjyxok.site^
 ||uvwelvnydoy.com^
+||uvwtadbhfqttc.online^
 ||uvwtmppnbqgzha.com^
 ||uvwvjd.cablematic.com^
 ||uvxclrl.com^
@@ -407609,6 +407617,7 @@
 ||vnkpcielaguki.online^
 ||vnkzpvmaximaz.website^
 ||vnl1.voyage-prive.nl^
+||vnlieaosjqtxa.site^
 ||vnlozunyvl.com^
 ||vnlqgiuul.com^
 ||vnlvxi.vivastreet.co.uk^
@@ -439994,6 +440003,7 @@
 ||yvdxhbuupndqo.love^
 ||yvdxij.applevacations.com^
 ||yvdzdkiov.com^
+||yvehygnvznbnd.online^
 ||yvercbjclvafn.site^
 ||yves-rocker.fr^
 ||yveysufrzogll.online^
