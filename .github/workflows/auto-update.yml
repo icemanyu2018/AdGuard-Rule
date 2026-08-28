@@ -21,14 +21,11 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  update-rules:
+  Update_Filters:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout adrules branch
-        uses: actions/checkout@v5
-        with:
-          ref: adrules      # 切换到 adrules 分支[cite: 2]
-          fetch-depth: 0    # 关键修复：关闭浅克隆，避免 git fetch 匹配引用报错
+      - uses: actions/checkout@v5
 
       - name: Set up JDK 11
         uses: actions/setup-java@v5
