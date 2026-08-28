@@ -2,7 +2,7 @@ name: Update Rules
 on:
   push:
     branches: 
-      - adrules
+      - main
     paths-ignore:
       - '*.md'
       - '.DS_Store'
@@ -25,20 +25,22 @@ jobs:
   update-rules:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout adrules branch
-        uses: actions/checkout@v5
+      - name: Checkout main branch
+        uses: actions/checkout@v4
         with:
-          ref: adrules  # 切换到 adrules 分支
+          ref: main
+          fetch-depth: 0
 
       - name: Setup Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v5
         with:
           python-version: '3.13'
-      - uses: actions/setup-node@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
           node-version: '24'
 
-      # Install hostlist-compiler
       - name: Install hostlist-compiler
         run: npm i -g @adguard/hostlist-compiler
 
@@ -86,10 +88,10 @@ jobs:
 
       - name: Push rule updates
         if: steps.commit.outputs.status == 'success' && !cancelled()
-        run: git push origin HEAD:adrules
+        run: git push origin HEAD:main
 
       - name: Delete Workflow Runs
-        uses: Mattraks/delete-workflow-runs@v2.1.0
+        uses: Mattraks/delete-workflow-runs@v2
         with:
           token: ${{ github.token }}
           repository: ${{ github.repository }}
