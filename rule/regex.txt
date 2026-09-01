@@ -1,5 +1,5 @@
 ! Title: AdGuard Rule - regex.txt
-! Last modified: 2026-09-01 02:58:14
+! Last modified: 2026-09-01 12:22:50
 ! Expires: 12 hours
 ! Homepage: https://github.com/hululu1068/AdGuard-Rule
 
