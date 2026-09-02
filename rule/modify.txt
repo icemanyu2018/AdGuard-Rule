@@ -1,5 +1,5 @@
 ! Title: AdGuard Rule - modify.txt
-! Last modified: 2026-09-02 00:19:32
+! Last modified: 2026-09-02 11:45:39
 ! Expires: 12 hours
 ! Homepage: https://github.com/hululu1068/AdGuard-Rule
 
@@ -18171,6 +18171,7 @@
 ||files.cameron-srva.com/*:webads/$domain=dooporn24.com
 ||files.im/images/bbnr/
 ||files.jb51.net^$image
+||files.maplescouter.com/next/ads^
 ||files.waifu.cat/68e29533.gif
 ||files.wordpress.com^$domain=hentaigasm.com
 ||filesearch.link/jsgetir.php
@@ -47669,6 +47670,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 1secmail.com###allbox > .col3:has(> .adsbygoogle)
 1secmail.com##.horizad
 1secmail.com#$#.col1:has(> #leftadbox:only-child) { visibility: hidden !important; }
+1shortlink.com#%#//scriptlet('prevent-element-src-loading', 'script', 'adsbygoogle')
 1snau.ru,bychico.net,dyrik.ru,ecosounds.net,in-drive.ru,inforpost.com,musecube.org,obozrevatel.com,oknotivi.ru,pogodnik.com,sandero.ru,turbominer.ru##body > div[style*="z-index"][style*="9999"]
 1tamilblasters.*##p[style="text-align: center;"] > a[target="_blank"] > img
 1tamilblasters.*#?#.ipsWidget > .ipsWidget_inner:has(> p[style="text-align: center;"]:only-child > a[target="_blank"] > img)
@@ -53072,6 +53074,8 @@ bestbuy.com##.slContainer:has(> .sponsored)
 bestbuy.com##.spotlight-ad
 bestbuy.com##[data-testid="sponsored-listing"]
 bestbuy.com##[data-testid="story-wrapper-row"] div:has(> [data-story-name="sponsored_grid"])
+bestbuy.com##div[data-action-name="ad_hp_sbb"]
+bestbuy.com##div[data-adfoundry-placement]
 bestbuy.com##div[id^="shop-display-ad-"]
 bestbuy.com##li.embedded-sponsored-listing
 bestbuy.com##li[data-testid="sponsored-listing"]
@@ -70399,6 +70403,7 @@ kaufland.*##.product:has(div.product__sponsored-ad-label)
 kaufland.*##.rd-recommender__tile:has(div.rd-product-tile__badge--ad)
 kaufland.*##.rd-recommender__tile:has(span.advertiser-info__button-icon)
 kaufland.*##.spads-recommender
+kaufland.*##.sponsored-brand-ads
 kaufland.*##.sponsored-brand-products-container
 kaufland.*##.teaser-orchestration__wrapper--online
 kaufland.*#?#.recommender-wrapper:contains(Gesponsert)
@@ -80900,6 +80905,7 @@ porntube.com##.videoplayer.last > div.container > div.row > div > div.row > div.
 porntube.com##.webcam-shelve
 porntube.com##iframe[src^="https://as.sexad.net/"]
 porntube.com#%#window.adsEnabled = true;
+pornuse.com##.video__info > section:has(> div > div.direct-abnner)
 pornuse.com##span[class]:has(> div.ip)
 pornv.xxx##.special-images
 pornv.xxx##.v__s
