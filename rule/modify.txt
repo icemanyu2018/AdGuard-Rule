@@ -1,5 +1,5 @@
 ! Title: AdGuard Rule - modify.txt
-! Last modified: 2026-09-05 00:02:57
+! Last modified: 2026-09-05 11:45:14
 ! Expires: 12 hours
 ! Homepage: https://github.com/hululu1068/AdGuard-Rule
 
@@ -14749,9 +14749,11 @@
 ||boyfriend.tv/out/bg-$popup
 ||boyfriendtv.com/ads/
 ||boyfriendtv.com/bftv/b/
+||boyfriendtv.com/bftv/bb/
 ||boyfriendtv.com/bftv/bb/$subdocument
 ||boyfriendtv.com/bftv/paysite/
 ||boyfriendtv.com/bftv/www/js/*.min.js?url=
+||boyfriendtv.com/link/out/b/
 ||boyfriendtv.com/out/bg-$popup
 ||boysfood.com/d5.html
 ||boysfood.com/feature.js
@@ -17804,6 +17806,7 @@
 ||ets2.gr^$all
 ||etxt.biz/data/rotations/
 ||etxt.biz/images/b/
+||eugenemakedraw.com^$badfilter
 ||eujsiyajep.niigata.jp^$doc
 ||euro4ads.de^$third-party
 ||eurochannel.com/images/banners/
@@ -20493,13 +20496,13 @@
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,3p,redirect=google-ima.js,domain=20min.ch
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,3p,redirect=google-ima.js,domain=4gtv.tv,important
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,3p,redirect=google-ima.js,domain=etonline.com,important
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,3p,redirect=google-ima.js,domain=eugenemakedraw.com,important
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,3p,redirect=google-ima.js,domain=fox5sandiego.com
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,3p,redirect=google-ima.js,domain=infiny.live
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,3p,redirect=google-ima.js,domain=kraloyun.com
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,3p,redirect=google-ima.js,domain=ktla.com,important
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,3p,redirect=google-ima.js,domain=pilipinaslive.com
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,3p,redirect=google-ima.js,domain=thethings.com
-||imasdk.googleapis.com/js/sdkloader/ima3.js$script,3p,redirect=google-ima.js,domain=tracylocalschool.com,important
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,3p,redirect=google-ima3,domain=humix.com|mistergadget.tech,important
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=airtelxstream.in,redirect=google-ima.js,important
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=bg-gledai.video,redirect=google-ima.js
@@ -24526,6 +24529,8 @@
 ||openadserving.com^$popup
 ||openadultdirectory.com/banner-
 ||openai-backup.one^$all
+||openalternative.co/advertise?
+||openalternative.co^*/ads/
 ||openapi-mobile.youku.com/statis^$app=com.huawei.hwvplayer.youku
 ||openapi.youku.com/router^$app=com.huawei.hwvplayer.youku
 ||openbook.net^$third-party
@@ -29775,7 +29780,6 @@
 ||trackvoluum.com^$popup
 ||trackwilltrk.com^$popup
 ||tracot.com^$popup
-||tracylocalschool.com^$badfilter
 ||tradeadexchange.com/a/display.php$domain=shinden.pl,important
 ||tradeadexchange.com^$popup
 ||tradedoubler.com/click*^url=http$doc,urlskip=?url
@@ -45928,7 +45932,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /flashCookie*
 /flashad*
 /flashad.asp$subdocument
-/flashad.js$script
 /floa.js$domain=ah-me.com|beeg.com|croea.com|imagetwist.com|kporno.com|picshick.com|picturelol.com|porntube.com
 /floatModel/*
 /float_ad.js$script
@@ -51902,6 +51905,7 @@ atd.com.cn##[style^="height:100px;"],[style^="height:120px;"]
 atea.com,ateadirect.com,knowyourmobile.com,nlk.org.np#@#.logo-ad
 atefaucet.com,coinsrev.com#%#//scriptlet("prevent-addEventListener", "load", "lipfoJyjxTvn")
 aternos.org###placement-takeover
+aternos.org##+js(trusted-rpnt, script, /U1gLsd=rc8nRpC\[0x21\]/g, U1gLsd=!0x1, sedCount, 1)
 aternos.org##.ad-dfp:style(min-height: 0.1485mm !important; height: 0.1485mm !important;)
 aternos.org##.header-center:style(margin-top:-5000px !important;)
 aternos.org##.sidebar:style(width: 1.745px !important; padding: 1px !important)
@@ -54220,6 +54224,12 @@ boyfriend.tv,boyfriendtv.com##a[href*="&creativeId="]
 boyfriend.tv,boyfriendtv.com##li[class="media-item no-popup"]
 boyfriend.tv,boyfriendtv.com,camwhores.*,txxx.com##.fh-line
 boyfriend.tv,boyfriendtv.com,hentaigasm.com,masahub.net,missav.ai,missav.ws,missav123.com,missav888.com,phun.org,porn-w.org##a[href*="//bit.ly/"]
+boyfriendtv.com##.info-block-wrapper
+boyfriendtv.com##.side-content-block
+boyfriendtv.com#$##b-page-frame > * { pointer-events:auto; }
+boyfriendtv.com#$##b-page-frame { padding-top:0; }
+boyfriendtv.com#$##b-page-frame { pointer-events:none; }
+boyfriendtv.com#$#body { cursor:default; }
 boyfriendtv.com#%#//scriptlet('abort-on-property-read', 'backgroundBlack')
 boyfriendtv.com#%#//scriptlet('prevent-addEventListener', 'click', 'interstitial')
 boyfriendtv.com,historydaily.org##.adwrapper
@@ -60779,6 +60789,10 @@ etymonline.com#?#.w-full:has(> div[class^="space-"] > div.flex > button:contains
 eu.press-citizen.com##.page-background-placeholder
 eu.press-citizen.com##.secondary:has(> div.content-well > div.module-slot > partner-poster)
 euautodily.cz,euautoteile.de,euautoteile.at,euautoteile.ch,euautopezzi.it,euautopieces.fr,euautoczesci.pl,euantallaktika.gr,euautorecambios.es,euautopecas.pt,euautoonderdelen.be,euautodele.dk,eualkatresz.hu,euvaraosat.fi,euspares.co.uk,euavtodeli.si,euroautodiely.sk,euavtochasti.bg,euautodalys.lt,euautopiese.ro,euautoonderdelen.nl,euautodeler.co.no,euautodalas.lv,euautoosad.ee,eurobildelar.se##.traffic_banner_wrapper
+eugenemakedraw.com##+js(acs, WebAssembly, atob)
+eugenemakedraw.com##+js(acs, globalThis, break;case)
+eugenemakedraw.com##+js(nowoif)
+eugenemakedraw.com##+js(set, console.clear, undefined)
 euobserver.com###root > div > div:has(#dfp-billboard)
 euobserver.com#$##root > div > div[style^="padding-top:"] > div[style*="top:"] { top: 0 !important; }
 euobserver.com#$#._11d7t56 { display: none !important; }
@@ -78286,7 +78300,7 @@ openallurls.com##.articles-col > div[style^="margin-bottom:"][style*="min-height
 openallurls.com##.articles-col > form ~ br
 openallurls.com##.nav-content-wrap > .row > .col-sm-6:has(> div[style^="width:"][style*="min-height:"] > .adsbygoogle)
 openalternative.co##.duration-100.rounded-lg:has(a[href="/advertise"])
-openalternative.co##.relative.rounded-lg:has(a[href="/advertise"])
+openalternative.co##.relative.rounded-lg:has(a[href^="/advertise"])
 openalternative.co##a.ease-out[href^="https://trycomp.ai?"]
 openalternative.co##body > div.min-h-dvh > div.relative:has(> a[href^="https://trycomp.ai"])
 openalternative.co##div[class="relative flex max-md:order-3"]:has(a[href="/advertise"])
@@ -90478,10 +90492,6 @@ tracktollywood.com##article > .tdc-zone > .tdc_zone > .tdc-row:has(> .vc_row > .
 tracktrace.dpd.com.pl###banner-central-footer-link
 tracktrace.dpd.com.pl#$#.banner-side-bar { visibility: hidden !important; }
 tractorbynet.com##a[href][target="_blank"] > img[class^="attachment-large"]
-tracylocalschool.com##+js(acs, WebAssembly, atob)
-tracylocalschool.com##+js(acs, globalThis, break;case)
-tracylocalschool.com##+js(nowoif)
-tracylocalschool.com##+js(set, console.clear, undefined)
 tracylocalschool.com,rebeccasciencestreet.com,nicholasbreakplan.com,benjaminreducecommunity.com,maryspecialwatch.com,brittanyaheadnew.com,charlessheimprove.com,richardquestionbuilding.com,timmaybealready.com,charlestoughrace.com,ianrequireadult.com,marissasharecareer.com,jessicaclearout.com,jefferycontrolmodel.com,dianaavoidthey.com,lancewhosedifficult.com,lauradaydo.com,crystaltreatmenteast.com,walterprettytheir.com,christopheruntilpoint.com,mikaylaarealike.com,lukesitturn.com,jilliandescribecompany.com,kellywhatcould.com,johnalwayssame.com,mariatheserepublican.com,jonathansociallike.com,diananatureforeign.com,sarahnewspaperbeat.com,richardsignfish.com,jennifercertaindevelopment.com,nathanfromsubject.com,adrianmissionminute.com,kristiesoundsimply.com,heatherwholeinvolve.com,alejandrocenturyoil.com,maxfinishseveral.com,robertordercharacter.com,sandratableother.com,brittneystandardwestern.com,jamessoundcost.com,toddpartneranimal.com,kimberlyonlocal.com,richardstorehalf.com,zacharycollectionmight.com,thomasalthoughhear.com,susanhavekeep.com,lorimuchbenefit.com,evelynthankregion.com,jessicaglassauthor.com,lisatrialidea.com,bethshouldercan.com,donaldlineelse.com,josephseveralconcern.com,alleneconomicmatter.com,robertplacespace.com,heatherdiscussionwhen.com,jayservicestuff.com,morganoperationface.com,johntryopen.com,jamiesamewalk.com,kennethofficialitem.com,lukecomparetwo.com,edwardarriveoften.com,paulkitchendark.com,kathleenmemberhistory.com,phenomenalityuniform.com,urochsunloath.com,35volitantplimsoles5.com,antecoxalbobbing1010.com,cyamidpulverulence530.com,guidon40hyporadius9.com,housecardsummerbutton.com,un-block-voe.net,voeunblk.com,voeunbl0ck.com,voeunblock2.com,voeunblock.com,voe-unblock.*,voe.sx#%#//scriptlet("abort-current-inline-script", "$", "/\.fadeIn|\.show\(.?\)/")
 tracylocalschool.com,rebeccasciencestreet.com,nicholasbreakplan.com,benjaminreducecommunity.com,maryspecialwatch.com,brittanyaheadnew.com,charlessheimprove.com,richardquestionbuilding.com,timmaybealready.com,charlestoughrace.com,ianrequireadult.com,marissasharecareer.com,jessicaclearout.com,jefferycontrolmodel.com,dianaavoidthey.com,lancewhosedifficult.com,lauradaydo.com,crystaltreatmenteast.com,walterprettytheir.com,christopheruntilpoint.com,mikaylaarealike.com,lukesitturn.com,jilliandescribecompany.com,kellywhatcould.com,johnalwayssame.com,mariatheserepublican.com,jonathansociallike.com,diananatureforeign.com,sarahnewspaperbeat.com,richardsignfish.com,jennifercertaindevelopment.com,nathanfromsubject.com,adrianmissionminute.com,kristiesoundsimply.com,heatherwholeinvolve.com,alejandrocenturyoil.com,maxfinishseveral.com,robertordercharacter.com,sandratableother.com,brittneystandardwestern.com,jamessoundcost.com,toddpartneranimal.com,kimberlyonlocal.com,richardstorehalf.com,zacharycollectionmight.com,thomasalthoughhear.com,susanhavekeep.com,lorimuchbenefit.com,evelynthankregion.com,jessicaglassauthor.com,lisatrialidea.com,bethshouldercan.com,donaldlineelse.com,josephseveralconcern.com,alleneconomicmatter.com,robertplacespace.com,heatherdiscussionwhen.com,jayservicestuff.com,morganoperationface.com,johntryopen.com,jamiesamewalk.com,kennethofficialitem.com,lukecomparetwo.com,edwardarriveoften.com,paulkitchendark.com,kathleenmemberhistory.com,phenomenalityuniform.com,urochsunloath.com,35volitantplimsoles5.com,antecoxalbobbing1010.com,cyamidpulverulence530.com,guidon40hyporadius9.com,housecardsummerbutton.com,un-block-voe.net,voeunblk.com,voeunbl0ck.com,voeunblock2.com,voeunblock.com,voe-unblock.*,voe.sx#%#//scriptlet("abort-current-inline-script", "encodeURIComponent", "break;case")
 tracylocalschool.com,rebeccasciencestreet.com,nicholasbreakplan.com,benjaminreducecommunity.com,maryspecialwatch.com,brittanyaheadnew.com,charlessheimprove.com,richardquestionbuilding.com,timmaybealready.com,charlestoughrace.com,ianrequireadult.com,marissasharecareer.com,jessicaclearout.com,jefferycontrolmodel.com,dianaavoidthey.com,lancewhosedifficult.com,lauradaydo.com,crystaltreatmenteast.com,walterprettytheir.com,christopheruntilpoint.com,mikaylaarealike.com,lukesitturn.com,jilliandescribecompany.com,kellywhatcould.com,johnalwayssame.com,mariatheserepublican.com,jonathansociallike.com,diananatureforeign.com,sarahnewspaperbeat.com,richardsignfish.com,jennifercertaindevelopment.com,nathanfromsubject.com,adrianmissionminute.com,kristiesoundsimply.com,heatherwholeinvolve.com,alejandrocenturyoil.com,maxfinishseveral.com,robertordercharacter.com,sandratableother.com,brittneystandardwestern.com,jamessoundcost.com,toddpartneranimal.com,kimberlyonlocal.com,richardstorehalf.com,zacharycollectionmight.com,thomasalthoughhear.com,susanhavekeep.com,lorimuchbenefit.com,evelynthankregion.com,jessicaglassauthor.com,lisatrialidea.com,bethshouldercan.com,donaldlineelse.com,josephseveralconcern.com,alleneconomicmatter.com,robertplacespace.com,heatherdiscussionwhen.com,jayservicestuff.com,morganoperationface.com,johntryopen.com,jamiesamewalk.com,kennethofficialitem.com,lukecomparetwo.com,edwardarriveoften.com,paulkitchendark.com,kathleenmemberhistory.com,phenomenalityuniform.com,urochsunloath.com,35volitantplimsoles5.com,antecoxalbobbing1010.com,cyamidpulverulence530.com,guidon40hyporadius9.com,housecardsummerbutton.com,un-block-voe.net,voeunblk.com,voeunbl0ck.com,voeunblock2.com,voeunblock.com,voe-unblock.*,voe.sx#%#//scriptlet('google-ima3')
