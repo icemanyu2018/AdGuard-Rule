@@ -1,5 +1,5 @@
 # Title: AdGuard Rule - hosts.txt
-# Last modified: 2026-09-05 22:52:35
+# Last modified: 2026-09-06 11:48:13
 # Expires: 12 hours
 # Homepage: https://github.com/hululu1068/AdGuard-Rule
 

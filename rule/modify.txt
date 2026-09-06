@@ -1,5 +1,5 @@
 ! Title: AdGuard Rule - modify.txt
-! Last modified: 2026-09-05 22:52:35
+! Last modified: 2026-09-06 11:48:14
 ! Expires: 12 hours
 ! Homepage: https://github.com/hululu1068/AdGuard-Rule
 
@@ -15424,6 +15424,7 @@
 ||cdn.searchiq.co/app/search/presearch/meta/advertiser_click_template.json
 ||cdn.sexygame66.com^$media
 ||cdn.shopify.com/*assets/pixel.gif$image,redirect=1x1.gif,domain=metrovac.com,important
+||cdn.shopify.com/extensions/*/ba_tracking.js$domain=ridge.com,important
 ||cdn.shopify.com^$domain=moviechat.org
 ||cdn.shopify.com^*/assets/spreadrwidget.js$domain=jolinne.com
 ||cdn.shortpixel.ai/client/q_lossy,ret_img/https://anime-odcinki.pl/wp-content/uploads/*/ga_banner1.jpg
@@ -32731,7 +32732,7 @@
 /^https:\/\/www\.[a-z]{8,9}\.com\/[a-z]+\.js$/$domain=pornhoarder.net
 /^https:\/\/www\.air-?up-?[a-z]{2,}\.com\//$doc,to=com|~air-up.com
 /^https:\/\/www\.gayxnow\.com\/[a-z][a-z][a-z][a-z][a-z][a-z]?\.js$/$script
-/^https:\/\/www\.igorslab\.de\/[a-z0-9]+\/[\/a-zA-Z0-9_-]+$/$image,1p,match-case,domain=igorslab.de
+/^https:\/\/www\.igorslab\.de\/[a-z0-9]+\/[\/a-zA-Z0-9_-]+$/$image,1p,match-case,domain=igorslab.de,redirect=32x32.png
 /^https:\/\/www\.locopelis\.com\/[a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9]\.js$/$script,match-case
 /^https:\/\/www\.natomanga\.com\/js\/[a-f0-9]{32}\.js$/$script,domain=natomanga.com
 /^https:\/\/www\.sextu\.com\/([a-z]{9,12})\/([a-z]{9,12})\.js$/$domain=sextu.com
@@ -62606,6 +62607,7 @@ forbes.com###featured-partners.with-adv-icon
 forbes.com###stackForbesAdvoice
 forbes.com##.MWrh7
 forbes.com##.adblock-unused
+forbes.com##.article-body-container > div[class]> div[class]:has(> div[class]:only-child > fbs-video[ad-unit-path]:only-child)
 forbes.com##.article-speed-bump
 forbes.com##.channel--ad
 forbes.com##.fbs-ad--mobile-medianet-wrapper
@@ -62639,6 +62641,7 @@ forbes.com##div[class^="fbs-ad"]
 forbes.com##div[class^="fbs-ad--"]
 forbes.com##div[data-testid^="fbs-ad"]
 forbes.com##div[id^="google_ads_iframe_"]
+forbes.com##fbs-video[ad-unit-path]
 forbes.com##main div[class][style^="top:"]:has(> div > fbs-video[ad-unit-path])
 forbes.com##main div[class][style^="top:"]:has-text(FORBES’ FEATURED Video)
 forbes.com#$#.main-content--body { padding-top: unset !important; }
@@ -66926,9 +66929,7 @@ historic-uk.com#?#.article-sidebar:contains(Advertisement)
 historicaerials.com###bot_container
 historicaerials.com###top_container
 historicaerials.com##+js(aeld, load, showFallbackModal)
-historicaerials.com##+js(trusted-create-html, #historicaerials_g_160x600_Left, <div id="google_ads_iframe_/22597447651/historicaerials_g_160x600_Left_0__container__"><iframe id="google_ads_iframe_/22597447651/historicaerials_g_160x600_Left_0" width="1" height="1" data-load-complete="true"></iframe></div>)
-historicaerials.com##+js(trusted-create-html, #historicaerials_g_160x600_Right, <div id="google_ads_iframe_/22597447651/historicaerials_g_160x600_Right_0__container__"><iframe id="google_ads_iframe_/22597447651/historicaerials_g_160x600_Right_0" width="1" height="1" data-load-complete="true"></iframe></div>)
-historicaerials.com##+js(trusted-create-html, #historicaerials_g_728x90_ATF, <div id="google_ads_iframe_/22597447651/historicaerials_g_728x90_ATF_0__container__"><iframe id="google_ads_iframe_/22597447651/historicaerials_g_728x90_ATF_0" width="1" height="1" data-load-complete="true"></iframe></div>)
+historicaerials.com##+js(trusted-create-html, #historicaerials_g_728x90_ATF, <div id="google_ads_iframe_/22597447651/historicaerials_g_728x90_ATF_0__container__"><iframe id="google_ads_iframe_/22597447651/historicaerials_g_728x90_ATF_0" width="2" height="2" data-load-complete="true"></iframe></div>)
 historicaerials.com#$##xcontent_container > div[id][style*="position: fixed"][style*="z-index:"]:has(> .modal-content > div > button[onclick="window.location.reload();"]) { display: none !important; }
 historicaerials.com#$#body { overflow: auto !important; }
 historicaerials.com#%#//scriptlet('abort-current-inline-script', 'EventTarget.prototype.addEventListener', 'googletag.pubads')
@@ -67957,7 +67958,7 @@ igorchernomoretz.com##body > div[id^="ab"]
 igorchernomoretz.com##body > div[id^="ab"] + div[style*="cursor"]
 igorslab.de###content ~ .herald-slide
 igorslab.de###extras > #single-sticky + div[class]:not([id]):has(a[href][target="_blank"] img)
-igorslab.de##+js(rmnt, script, rescue)
+igorslab.de##+js(rmnt, script, recoverImage)
 igorslab.de##.entry-content > #skio-article-bar ~ div[id][class]:not([class*="igorslab"]):has(a[href][target="_blank"] img)
 igorslab.de##.herald-above-footer
 igorslab.de##.herald-main-content > .row > .herald-module:not([data-col]):has(> .herald-txt-module div[id*="-"][class] > div[id*="-"][class*="target"] a[href][rel="noopener"] img)
@@ -67965,7 +67966,7 @@ igorslab.de##.herald-sidebar
 igorslab.de##.herald-sidebar-right > .widget:not([id*="widget"])
 igorslab.de##.herald-sticky
 igorslab.de##a[aria-label*="Banner"]
-igorslab.de##a[target*="-"]:has(img[src^="blob:"])
+igorslab.de##a[target] img[src^="blob:"]
 igorslab.de##div.widget[class*="-widget"][id*="-widget-"]
 igraal.com##[data-ig-ga-cat="Ad"]
 igram.im##.mcon
@@ -83049,6 +83050,7 @@ ridble.com##.adisclaimer
 riderfans.com##.restore.widget-content
 riderplanet-usa.com#@##ad_1
 riderplanet-usa.com,sdf-event.sakura.ne.jp#@##ad_1
+ridge.com##+js(set, baMet.register, noopFunc)
 riemurasia.net###container > div[class^="slide_"]
 riemurasia.net#?##container > div.main-div > div[id]:has(>script[data-adfscript])
 riflegear.com#@#.featuredAds
