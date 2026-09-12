@@ -1,5 +1,5 @@
 # Title: AdGuard Rule - hosts.txt
-# Last modified: 2026-09-12 11:54:29
+# Last modified: 2026-09-12 23:17:29
 # Expires: 12 hours
 # Homepage: https://github.com/hululu1068/AdGuard-Rule
 
@@ -310,7 +310,6 @@
 0.0.0.0 geo.settings.data.microsoft.com.akadns.net
 0.0.0.0 geo.vortex.data.microsoft.com.akadns.net
 0.0.0.0 go.bestmobiworld.com
-0.0.0.0 go.fastspot.io
 0.0.0.0 go.megabanners.cf
 0.0.0.0 goldoffer.online
 0.0.0.0 gramombird.com
