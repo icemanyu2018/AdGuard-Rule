@@ -34,7 +34,9 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: '3.13'
-      - uses: actions/setup-node@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
         with:
           node-version: '24'
 
@@ -43,13 +45,11 @@ jobs:
         run: npm i -g @adguard/hostlist-compiler
 
       - name: Update Upstream
-        continue-on-error: false
         run: |
           pip install requests
           bash ./script/fetch-rules.sh
         
       - name: Build Rules
-        continue-on-error: false
         run: |
           bash ./script/build-content-rules.sh
           bash ./script/update-dns-rules.sh
@@ -61,7 +61,6 @@ jobs:
           rm -f ./*.txt
           curl --fail --location --retry 3 --output jiekouAD.txt \
             https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt
-
           bash ../script/github-hosts.sh
           cd ../
 
@@ -75,14 +74,16 @@ jobs:
             adrules.list adrules.list.json qx.conf smart-dns.conf
             mosdns_adrules.txt rules
           )
+          # 检查是否有文件更新
           if [ -z "$(git status --porcelain -- "${assets[@]}")" ]; then
+            echo "没有规则文件更新，跳过提交"
             exit 0
           fi
           echo "status=success" >> "$GITHUB_OUTPUT"
           git config --local user.name "actions"
           git config --local user.email "action@github.com"
           git add -- "${assets[@]}"
-          git commit -m "Update rules: $(TZ=UTC-8 date +"%Y-%m-%d %H:%M")" -- "${assets[@]}"
+          git commit -m "Update rules: $(date +"%Y-%m-%d %H:%M")" -- "${assets[@]}"
 
       - name: Push rule updates
         if: steps.commit.outputs.status == 'success' && !cancelled()
