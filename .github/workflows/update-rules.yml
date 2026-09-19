@@ -26,71 +26,43 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout adrules branch
-        uses: actions/checkout@v5
+        uses: actions/checkout@v4
         with:
-          ref: adrules  # 切换到 adrules 分支
+          ref: adrules
 
-      - name: Setup Python
-        uses: actions/setup-python@v6
+      # 配置 Java 17 环境
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
         with:
-          python-version: '3.13'
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
 
-      - name: Setup Node
-        uses: actions/setup-node@v6
-        with:
-          node-version: '24'
-
-      # Install hostlist-compiler
-      - name: Install hostlist-compiler
-        run: npm i -g @adguard/hostlist-compiler
-
-      - name: Update Upstream
+      # 针对你的 pom.xml (Spring Boot 项目)，使用 spring-boot:run 启动主类
+      - name: Build and Run Java Rules Merger
         run: |
-          pip install requests
-          bash ./script/fetch-rules.sh
-        
-      - name: Build Rules
-        run: |
-          bash ./script/build-content-rules.sh
-          bash ./script/update-dns-rules.sh
-          python3 ./script/validate-output.py
+          mvn clean compile spring-boot:run
 
-      - name: Update other rules | 更新其它规则及Github-Hosts
-        run: |
-          cd rules
-          rm -f ./*.txt
-          curl --fail --location --retry 3 --output jiekouAD.txt \
-            https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt
-          bash ../script/github-hosts.sh
-          cd ../
-
+      # 提交规则产物到仓库
       - name: Git push assets to Github
         id: commit
         run: |
-          assets=(
-            adblock.txt adblock_lite.txt adblock_plus.txt dns.txt
-            adrules_domainset.txt adrules-surge.conf
-            adrules-singbox.json adrules-singbox.srs adrules-mihomo.mrs
-            adrules.list adrules.list.json qx.conf smart-dns.conf
-            mosdns_adrules.txt rules
-          )
-          # 检查是否有文件更新
-          if [ -z "$(git status --porcelain -- "${assets[@]}")" ]; then
-            echo "没有规则文件更新，跳过提交"
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
             exit 0
           fi
+          git commit -m "Update rules: $(date +"%Y-%m-%d %H:%M")"
           echo "status=success" >> "$GITHUB_OUTPUT"
-          git config --local user.name "actions"
-          git config --local user.email "action@github.com"
-          git add -- "${assets[@]}"
-          git commit -m "Update rules: $(date +"%Y-%m-%d %H:%M")" -- "${assets[@]}"
 
       - name: Push rule updates
         if: steps.commit.outputs.status == 'success' && !cancelled()
         run: git push origin HEAD:adrules
 
       - name: Delete Workflow Runs
-        uses: Mattraks/delete-workflow-runs@v2.1.0
+        uses: Mattraks/delete-workflow-runs@v2
         with:
           token: ${{ github.token }}
           repository: ${{ github.repository }}
