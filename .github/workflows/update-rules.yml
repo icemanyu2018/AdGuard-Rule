@@ -1,7 +1,7 @@
 name: Update Rules
 on:
   push:
-    branches: 
+    branches:
       - adrules
     paths-ignore:
       - '*.md'
@@ -26,17 +26,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout adrules branch
-        uses: actions/checkout@v5
+        uses: actions/checkout@v4
         with:
-          ref: adrules  # 切换到 adrules 分支
+          ref: adrules
 
       - name: Setup Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.13'
-      - uses: actions/setup-node@v6
+          python-version: '3.12'
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          node-version: '24'
+          node-version: '20'
 
       # Install hostlist-compiler
       - name: Install hostlist-compiler
@@ -47,7 +49,7 @@ jobs:
         run: |
           pip install requests
           bash ./script/fetch-rules.sh
-        
+
       - name: Build Rules
         continue-on-error: false
         run: |
@@ -76,13 +78,14 @@ jobs:
             mosdns_adrules.txt rules
           )
           if [ -z "$(git status --porcelain -- "${assets[@]}")" ]; then
+            echo "No changes to commit"
             exit 0
           fi
           echo "status=success" >> "$GITHUB_OUTPUT"
-          git config --local user.name "actions"
-          git config --local user.email "action@github.com"
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -- "${assets[@]}"
-          git commit -m "Update rules: $(TZ=UTC-8 date +"%Y-%m-%d %H:%M")" -- "${assets[@]}"
+          git commit -m "Update rules: $(TZ=Asia/Shanghai date +"%Y-%m-%d %H:%M")" -- "${assets[@]}"
 
       - name: Push rule updates
         if: steps.commit.outputs.status == 'success' && !cancelled()
