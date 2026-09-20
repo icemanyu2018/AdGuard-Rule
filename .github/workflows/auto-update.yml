@@ -48,8 +48,8 @@ jobs:
           else
             echo "status=success" >> $GITHUB_OUTPUT
             git add -- rule/*.txt
-            git config --local user.name "actions"
-            git config --local user.email "action@github.com"
+            git config --local user.name "icemanyu2018"
+            git config --local user.email "byronyu2004@126.com"
             git commit -m "CI Updated at $(date +'%Y-%m-%d %H:%M:%S')" -- rule/*.txt
           fi
 
