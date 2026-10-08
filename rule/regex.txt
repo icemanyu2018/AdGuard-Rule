@@ -1,5 +1,5 @@
 # Title: AdGuard、AdGuardHome广告过滤规则合并/去重 - regex.txt
-# Update time: 2026-10-08 11:19:14
+# Update time: 2026-10-09 02:05:32
 # Expires: 12 hours
 # Repo URL:: https://github.com/hululu1068/AdGuard-Rule
 
